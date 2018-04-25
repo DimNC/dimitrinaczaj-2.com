@@ -1,0 +1,43 @@
+html, body{
+    background-color: white
+}
+
+a, p, h1, h2 {
+    font-family: Arial;
+    font-size: 13px;
+    color: black;
+}
+
+img{
+    float:left;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.photo {
+  background-image: url(../images/photo.png), radial-gradient(rgba(200, 200, 200, 0.2), rgba(255, 255, 255, 0.3));
+  background-repeat: no-repeat;
+  background-size: 250px auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 250px;
+  border: solid 3px white;
+  margin: 30px;
+}
+
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 851px) {
+  body {
+    height: 90vh;
+  }
+  #mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
+
+}

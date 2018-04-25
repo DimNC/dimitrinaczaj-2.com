@@ -1,0 +1,80 @@
+//compileExpanded
+@import variables
+@import background
+
+html
+  height: 100%
+
+*
+  margin:  0
+  padding: 0
+
+body
+  font-family: $font
+  color: $fontcolor
+
+.home
+  padding-top: 15vh
+  padding-left: 10vw
+  padding-right: 2em
+
+
+  h1
+    font-family: $font
+    font-weight: 500
+    letter-spacing: .1em
+    color: $fontcolor
+    font-size: 3.5em
+    margin-bottom: .15em
+    text-transform: uppercase
+
+  h2
+    font-family: $font
+    font-weight: 500
+    letter-spacing: .12em
+    color: $fontcolor
+    font-size: 1em
+    text-transform: uppercase
+    padding-left: .2em
+    margin-bottom: 4em
+
+
+  p
+    line-height: 1.4em
+    font-weight: light
+    font-size: 1.2em
+    padding-left: .2em
+    padding-bottom: .3em
+    max-width: 700px
+    letter-spacing: .02em
+
+
+
+// GRID LAYOUT //
+
+main
+  height: 100vh
+  padding: 0
+  margin: 0
+  display: grid
+  grid-template-columns: 1fr 25vh
+  grid-template-rows: 1fr 13vh
+
+.home
+  grid-column: 1/2
+  grid-row: 1/2
+  overflow: auto
+
+.menu
+  grid-column: 2/3
+  grid-row: 1/3
+
+.footer
+  grid-column: 1/2
+  grid-row: 2/3
+
+// // menu
+@import menu
+//
+// // FOOTER
+@import footer

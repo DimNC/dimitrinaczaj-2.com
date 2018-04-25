@@ -1,0 +1,62 @@
+//output: index.html, pretty:true
+
+doctype html
+html
+
+  head
+
+    // Basic meta tags
+    meta(charset="utf-8")/
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    meta(http-equiv="content-language" content="en")
+    meta(name="language" content="en")
+
+    title Dimitri Naczaj | Research in Design &amp; Behavioural Sciences
+
+    // SEO Meta tags
+    meta(name="copyright" content="dimitrinaczaj.com")
+    meta(name="robot" content="index,follow")
+    meta(name="author" content="Dimitri Naczaj")
+    meta(name="description" content="Doctorant en Psychologie Sociale, spécialiste du changement d'opinions, de comportements et de la persuasion sur internet.")
+    meta(name="keywords" content="dimitri naczaj, dimitri, naczaj, psychologie sociale, nudges, communication engageante, comportements, opinion, DEEE, recyclage, changer les opinions, persuasion, persuasifs, Dijon, Université de Bourgogne, Aix-Marseille")
+
+    // SEO Open Graph Meta tags
+    meta(property="og:locale" content="en_EN")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Dimitri Naczaj | Research in Design &amp; Behavioural Sciences")
+    meta(property="og:description" content="Doctorant en Psychologie Sociale, spécialiste du changement d'opinions, de comportements et de la persuasion sur internet.")
+    meta(property="og:url" content="https://dimitrinaczaj.com/")
+    meta(property="og:site_name" content="Dimitri Naczaj")
+
+    // SEO Twitter Meta tags
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:site" content="@dimnc_")
+    meta(name="twitter:creator" content="@dimnc_")
+    meta(name="twitter:title" content="Dimitri Naczaj | Research in Design &amp; Behavioural Sciences")
+    meta(name="twitter:description" content="Doctorant en Psychologie Sociale, spécialiste du changement d'opinions, de comportements et de la persuasion sur internet.")
+    meta(name="twitter:image" content="https://dimitrinaczaj.com/images/photo.png")
+    meta(name="twitter:image:alt" content="Dimitri Naczaj")
+
+    // Favicon
+    link(rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico")
+    link(rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon-180.png")
+
+    // Favicon IE10 Metro
+    meta(name="msapplication-TileColor" content="#FFFFFF")
+    meta(name="msapplication-TileImage" content="images/favicons/favicon-144.png")
+    meta(name="theme-color" content="#ffffff")
+
+    // Stylesheets
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,700")
+    link(rel="stylesheet" type="text/css" href="css/printfriendly.css" media="print")
+
+    // Google Analytics
+    script(type="text/javascript" src="js/google-analytics.js")
+
+  body
+
+    main
+      include parts/home
+      include parts/menu
+      include parts/footer
